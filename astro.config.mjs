@@ -6,7 +6,7 @@ import tailwind from "@astrojs/tailwind";
 // https://astro.build/config
 export default defineConfig({
   site: 'https://cherry-editor.github.io/site/',
-  base: "site",
+  base: "/site/",
   integrations: [mdx(), sitemap(), tailwind()],
-  output: "server"
+  output: "static"
 });
